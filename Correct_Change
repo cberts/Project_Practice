@@ -1,0 +1,30 @@
+change = int(input())
+dollar = change // 100
+quarter = (change - (dollar * 100)) // 25
+dime = (change - (dollar * 100 + quarter * 25)) // 10
+nickel = ((change - (dollar * 100 + quarter * 25 + dime * 10)) // 5)
+penny = (change - (dollar * 100 + quarter * 25 + dime * 10 + nickel * 5)) 
+
+if change <= 0:
+    print('No change')
+if dollar == 1:
+    print('1 Dollar')
+if dollar > 1:
+    print('{} Dollars'.format(dollar))
+if quarter == 1:
+    print('1 Quarter')
+if quarter > 1:
+    print('{} Quarters'.format(quarter))
+if dime == 1:
+    print('1 Dime')
+if dime > 1:
+    print('{} Dimes'.format(dime))
+if nickel == 1:
+    print('1 Nickel')
+if nickel > 1:
+    print('{} Nickels'.format(nickel))
+if penny == 1:
+    print('1 Penny')
+if penny > 1:
+    print('{} Pennies'.format(penny))
+
